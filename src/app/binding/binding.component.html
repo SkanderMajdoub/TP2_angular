@@ -1,0 +1,10 @@
+<p>Bonjour {{nom }}</p>
+<p> {{nom.length }}</p>
+<p> {{nom.toUpperCase() }}</p>
+<p>{{infos()}}</p>
+<button bind-disabled="!actif" (click)="onAfficher()">Afficher</button>
+<input type ="text" (keyup.enter)="onKeyUp($event)" />
+
+{{contenu}}
+<input type ="text" #textbox />
+<button (click)="onAfficherContenu(textbox.value)">Afficher</button>
