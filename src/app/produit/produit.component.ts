@@ -9,6 +9,15 @@ export class ProduitComponent implements OnInit {
 
   constructor() { }
 
+  x1 : number=0 ;
+  x2 : number=0 ;
+  produit : number ;
+  onclick()
+  {
+this.produit = this.x1*this.x2 ;
+
+  }
+
   ngOnInit() {
   }
 
